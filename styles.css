@@ -1,15 +1,15 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #fff;
 }
 /* Link Styles */
 
@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #0A090C;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -57,33 +57,41 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url('images/brick-wall.svg');
+  /* background-size: cover; */
   overflow: hidden;
   padding-top: 60px;
+  background-color: #90DDF0;
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  /* width: 150px; */
+  height: 200px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
+
+  /* my additions */
+  margin-bottom: 50px;
+  border-radius: 5%;
+  background: rgba(255, 255, 255, .9);
+  padding: 20px;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
+  background-color: rgba(144, 221, 240, .9);
   color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
-} 
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+  /* display: table; */
+  margin: 0;
+  /* vertical-align: bottom; */
+}
 .location {
   background-color: #222;
   color: yellow;
@@ -169,10 +177,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -180,7 +188,7 @@ a.social:hover {
   }
 
   header {
-    min-height: 470px;
+    /* min-height: 470px; */
   }
 
   .nav {
@@ -204,4 +212,3 @@ a.social:hover {
   }
 
 }
-
