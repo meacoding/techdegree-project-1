@@ -24,6 +24,7 @@ a:hover {
 /* Section Styles */
 
 .main-nav {
+  z-index: 2;
   width: 100%;
   background: #0A090C;
   min-height: 30px;
@@ -67,21 +68,23 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 75px;
   /* width: 150px; */
-  height: 200px;
-  border-radius: 50%;
-  border: 3px solid white;
+  height: 225px;
+  /* border-radius: 50%; */
+  /* border: 3px solid white; */
   transition: all .5s;
 
   /* my additions */
-  margin-bottom: 50px;
+  z-index: 1;
+  transform: scale(1.2) rotate(5deg);
+  margin-bottom: 75px;
   border-radius: 5%;
   background: rgba(255, 255, 255, .9);
-  padding: 20px;
+  padding: 25px;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(0deg);
 }
 .tag {
   background-color: rgba(144, 221, 240, .9);
@@ -90,7 +93,7 @@ header .profile-image:hover {
   /* border-radius: 5px; */
   /* display: table; */
   margin: 0;
-  /* vertical-align: bottom; */
+  line-height: 2;
 }
 .location {
   background-color: #222;
@@ -102,14 +105,56 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  border-bottom: 4px solid #B7B5B6;
+  border-right: 4px dashed #B7B5B6;
+  /* border-radius: 6px; */
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+.bar-light-grey {
+  background-color: #F0EDEE;
 }
-
+.bar-grey {
+  background-color: #B7B5B6;
+  color: #0A090C;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+.bar-black {
+  background-color: #555;
+  color: #fff;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+.green {
+  background-color: #c9e297;
+}
+.brown {
+  background-color: #B87C4C;
+}
+.yellow {
+  background-color: #fff387;
+}
+.blue {
+  background-color: #90DDF0;
+}
+.zero {
+  background-color: #F0EDEE;
+}
+.twenty-five {
+  width: 25%;
+}
+.thirty-five {
+  width: 35%;
+}
+.sixty {
+  width: 60%;
+}
+.seventy-five {
+  width: 75%;
+}
+.ninety {
+  width: 90%;
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -158,12 +203,6 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
 }
 a.github {
   background-image: url(images/github.svg);
