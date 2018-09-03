@@ -11,6 +11,15 @@ body {
   color: #222;
   background: #fff;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.clearfix {
+  clear: both;
+}
+
 /* Link Styles */
 
 a {
@@ -23,6 +32,7 @@ a:hover {
 
 /* Section Styles */
 
+/* Navigation-------------------- */
 .main-nav {
   z-index: 2;
   width: 100%;
@@ -32,10 +42,12 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
+  font-family: 'Share Tech Mono', monospace;
+  font-size:  18px;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -46,27 +58,35 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
 .nav li {
-  padding: 5px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: white
 }
+/* End Navigation-------------------- */
 
+/* Header-------------------- */
 header {
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url('images/brick-wall.svg');
-  /* background-size: cover; */
+  background: url('images/randomized-pattern.svg');
+  background-size: 1000px auto;
   overflow: hidden;
   padding-top: 60px;
   background-color: #90DDF0;
+  font-family: 'Share Tech Mono', monospace;
 }
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 75px;
   /* width: 150px; */
@@ -79,109 +99,117 @@ header .profile-image {
   z-index: 1;
   transform: scale(1.2) rotate(5deg);
   margin-bottom: 75px;
-  border-radius: 5%;
-  background: rgba(255, 255, 255, .9);
   padding: 25px;
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(0deg);
 }
+
 .tag {
   background-color: rgba(144, 221, 240, .9);
   color: black;
-  /* padding: 10px; */
-  /* border-radius: 5px; */
-  /* display: table; */
   margin: 0;
   line-height: 2;
 }
-.location {
-  background-color: #222;
-  color: yellow;
-}
+/* End Header-------------------- */
+
+/* Cards-------------------- */
 .card {
   margin: 30px;
-  padding: 20px 40px 40px;
+  padding: 0px 40px 20px;
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #B7B5B6;
+  border-bottom: 4px dashed #B7B5B6;
   border-right: 4px dashed #B7B5B6;
-  /* border-radius: 6px; */
   transition: all .5s;
+  display: inline-block;
 }
+
 .bar-light-grey {
   background-color: #F0EDEE;
 }
+
 .bar-grey {
   background-color: #B7B5B6;
   color: #0A090C;
   padding: 4px;
   margin-bottom: 10px;
 }
+
 .bar-black {
   background-color: #555;
   color: #fff;
   padding: 4px;
   margin-bottom: 10px;
 }
+
 .green {
   background-color: #c9e297;
 }
+
 .brown {
   background-color: #B87C4C;
 }
+
 .yellow {
   background-color: #fff387;
 }
+
 .blue {
   background-color: #90DDF0;
 }
+
 .zero {
   background-color: #F0EDEE;
 }
+
 .twenty-five {
   width: 25%;
 }
+
 .thirty-five {
   width: 35%;
 }
+
 .sixty {
   width: 60%;
 }
+
 .seventy-five {
   width: 75%;
 }
+
 .ninety {
   width: 90%;
 }
-ul.skills {
-  padding: 0;
+/* End Cards-------------------- */
+
+/* Icon Aside-------------------- */
+aside {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
+aside img {
+  width: 75px;
+  height: 75px;
+  margin: 5px;
 }
+/* End Icon Aside-------------------- */
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
-}
-
+/* Footer-------------------- */
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 30px 20px 20px 20px;
+  background: #F0EDEE;
 }
 
 footer .copyright {
   top: -8px;
-  font-size: .75em;
+  font-size: .6em;
 }
 
 footer ul {
@@ -197,22 +225,23 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
+  margin: 0 0 5px 5px;
+  width: 40px;
+  height: 40px;
+  background-size: 40x 40px;
   opacity: .4;
   transition: all .5s;
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
-.clearfix {
-  clear: both;
-}
+/* End Footer-------------------- */
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -223,11 +252,7 @@ a.social:hover {
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      margin: 0 auto;
-  }
-
-  header {
-    /* min-height: 470px; */
+      margin: auto;
   }
 
   .nav {
@@ -237,17 +262,33 @@ a.social:hover {
 
 
   main {
-    padding-top: 20px;
+    padding: 40px;
   }
 
   main p {
     line-height: 1.6em;
   }
 
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
+  .card {
+    margin: 30px;
   }
 
+  aside {
+    margin-bottom: 40px;
+  }
+
+  aside img {
+    width: 100px;
+    height: 100px;
+  }
+
+  footer {
+    font-size: 1.3em;
+  }
+
+  a.social {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+  }
 }
