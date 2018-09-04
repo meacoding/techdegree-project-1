@@ -60,7 +60,7 @@ a:hover {
 }
 
 .nav li {
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
 .nav a {
@@ -228,7 +228,7 @@ a.social {
   margin: 0 0 5px 5px;
   width: 40px;
   height: 40px;
-  background-size: 40x 40px;
+  background-size: 40px 40px;
   opacity: .4;
   transition: all .5s;
 }
