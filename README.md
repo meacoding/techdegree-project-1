@@ -2,6 +2,9 @@
 
 A super basic website with HTML and CSS.
 
+![mockup-ipad-p1-50](https://user-images.githubusercontent.com/16675876/59796422-74e8fd80-92ab-11e9-9980-643128ce971d.png)
+
+
 ## Technologies and skills used 
 
 + HTML
