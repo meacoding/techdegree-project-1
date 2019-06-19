@@ -1,4 +1,4 @@
-# Basic Webpage - Techdegree FEWD Project 1
+# Basic Website - Techdegree FEWD Project 1
 
 A super basic website with HTML and CSS.
 
