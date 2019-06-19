@@ -1,7 +1,26 @@
-# Tech Degree Project 1
+# Basic Webpage - Techdegree FEWD Project 1
 
-Front-End Web Development. 
+A super basic website with HTML and CSS.
 
-Tests beginner skills in HTML and CSS.
+## Technologies and skills used 
 
-Starter files provided.
++ HTML
++ CSS
+
+
+## Reason for creation
+To build a simple website for a faux portfolio for the Treehouse Techdegree FEWD program.
+
+## What I did
+
+Per the instructions I built a faux portfolio that included a header, a footer and some body content. The design was left to our discretion.
+ 
+## Backstory
+
+This is the first project for the Techdegree FEWD program. It was super stinkin' easy. By the time I started the program I was already tinkering with Vue.js. I spent more time on this project than was probably necessary but I had a lot of fun with it. It has a light and airy feel that makes me happy.
+
+It does have an odd quirk upon loading. The page loads with a resizing transition. In retrospect I don't know why I never changed that.
+
+
+## License
+None.
