@@ -20,7 +20,7 @@ Per the instructions I built a faux portfolio that included a header, a footer a
  
 ## Backstory
 
-This is the first project in the Techdegree FEWD program. It was super stinkin' easy. By the time I started the program I was already tinkering with Vue.js. I spent more time on this project than was probably necessary but I had a lot of fun with it. It has a light and airy feel that makes me happy.
+This is the first project in the program. It was super stinkin' easy. By the time I started the program I was already tinkering with Vue.js. I spent more time on this project than was probably necessary but I had a lot of fun with it. It has a light and airy feel that makes me happy.
 
 It does have an odd quirk upon loading. The page loads with a resizing transition. In retrospect I don't know why I never fixed that.
 
